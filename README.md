@@ -16,3 +16,9 @@ TreeChat AI é um aplicativo web que organiza conversas com IA em uma estrutura 
 - Implementar autenticação real com JWT.
 - Integrar cliente OpenAI para streaming de respostas.
 - Persistir e navegar em árvores completas de conversas.
+
+## Deploy na Vercel
+- Importe o repositório na Vercel e mantenha o diretório raiz do projeto (o `vercel.json` já aponta para a pasta `frontend`).
+- Nas configurações do projeto, defina a variável de ambiente `VITE_API_URL` para o endpoint público do backend FastAPI.
+- A Vercel executará `npm install` e `npm run build` dentro de `frontend`, gerando os arquivos em `frontend/dist`.
+- O arquivo `vercel.json` também inclui um rewrite para que o Vite SPA responda a todas as rotas em produção.
