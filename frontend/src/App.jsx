@@ -1,5 +1,4 @@
 import './styles.css'
-import TreePreview from './components/TreePreview'
 import ChatPanel from './components/ChatPanel'
 
 function App() {
@@ -7,10 +6,9 @@ function App() {
     <div className="layout">
       <header className="header">
         <h1>TreeChat AI</h1>
-        <p>Explore conversas em formato de árvore com um assistente inteligente.</p>
+        <p>Converse com um assistente inteligente em um fluxo simples de chat.</p>
       </header>
       <main className="main">
-        <TreePreview />
         <ChatPanel />
       </main>
     </div>
